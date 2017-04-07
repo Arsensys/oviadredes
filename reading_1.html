@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Lectura 1</title>
-         <link rel="shortcut icon" href="img/favicon.ico" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -21,6 +21,12 @@
             <!-- Jumbotron -->         
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
+                    <div class="alert alert-info" role="alert">
+                        <strong>Descripci&oacute;n:</strong> Este documento habla sobre temas relacionados con "Seguridad en VoIP:Ataques, Amenazas y Riesgos" 
+                        <a class="btn btn-default pull-right" aria-label="Left Align"> Lectura 2 
+                            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
                     <div id="pdfdocument"></div>
                 </div>               
             </div>       
@@ -36,7 +42,7 @@
         <script>
             $(document).ready(function() {
                 $("#menu-container").load("menu.html");
-                  $("#mnread").addClass("active");
+                $("#mnread").addClass("active");
                 PDFObject.embed("docs/r1.pdf", "#pdfdocument");
             });
         </script>
