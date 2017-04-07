@@ -5,5 +5,4 @@ body{background-image: url('../img/pattern2.png');}
 .footer{position: fixed; bottom: 0;width: 100%;height: 60px;display: block;color: #F47920;}
 .footer .container{color: #F47920; background-color: #000; height: 60px; border-radius: 2px 2px 10px 10px;-moz-border-radius: 2px 2px 7px 7px;-webkit-border-radius: 2px 2px 7px 7px;}
 .pdfobject-container { height: 600px;}
-.page{background-color: #ffffff;}
-.footer .container{margin-bottom: 70px;}
+.page{background-color: #ffffff;margin-bottom: 60px;}
