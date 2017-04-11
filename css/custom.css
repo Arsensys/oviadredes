@@ -9,3 +9,4 @@ body{background-image: url('../img/pattern2.png');}
 .page{background-color: #ffffff;margin-bottom: 60px;}
 .wpr-timeline-Tweet{border: 1px solid #3b94d9;border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;}
 .quiz-box { max-height: 550px; overflow-y: auto;}
+.cour-icon{width: 80px;}
