@@ -7,4 +7,4 @@ body{background-image: url('../img/pattern2.png');}
 .pdfobject-container { height: 600px;}
 .page{background-color: #ffffff;margin-bottom: 60px;}
 .wpr-timeline-Tweet{border: 1px solid #3b94d9;border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;}
-.quiz-box { max-height: 600px; overflow-y: auto;}
+.quiz-box { max-height: 550px; overflow-y: auto;}
