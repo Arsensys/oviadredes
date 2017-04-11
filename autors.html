@@ -20,7 +20,7 @@
             <div id="menu-container"> </div>
             <div class="page">
                 <div class="row">
-                     <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-6">
+                    <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Mayra Alejandra Moreno</h3>
@@ -38,7 +38,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Cristian Camilo Rojas</h3>
@@ -96,8 +96,7 @@
             </div>       
         </div> <!-- /container -->
         <footer class="footer">
-            <div class="container">
-                <p>&copy; UNAD, DIseño de Sitios Web 2017.</p>
+            <div class="container" id="ft-cont">
             </div>
         </footer>
         <script src="js/jquery-3.1.1.min.js"></script>
@@ -106,8 +105,8 @@
         <script>
             $(document).ready(function() {
                 $("#menu-container").load("menu.html");
+                $("#ft-cont").load("footer.html");
                 $("#mnread").addClass("active");
-                PDFObject.embed("docs/r1.pdf", "#pdfdocument");
             });
         </script>
     </body>
