@@ -10,8 +10,8 @@ function testActividad1() {
         $(".askopt:checked").each(function(index) {
             if ($(this).val() === qz1_ans[index]) {
                 result += 1;
-                $(this).prop("checked",false);
             }
+            $(this).prop("checked", false);
         });
         if (result > 7) {
             clase = "success";
@@ -20,7 +20,7 @@ function testActividad1() {
         } else {
             clase = "danger";
         }
-        $("#res-content").html("<h4  class='text-"+clase+"'>Su calificacion es: " + (result + "/" + 10) + "</h4>")
+        $("#res-content").html("<h4  class='text-" + clase + "'>Su calificacion es: " + (result + "/" + 10) + "</h4>")
         $("#modal-launcher").click();
     } else {
         alert("Debe responder a todas las preguntas!\nRepondidas: " + answered + "\nSin responder: " + (10 - answered));
