@@ -1,13 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>Unad: Prueba Web</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>OVI: Adm. Redes</title>
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="menu-container"> </div>
+            <!-- Jumbotron -->
+            <div class="page">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="jumbotron effect6">
+                            <div  style="text-align:center;">
+                                <img src="img/lan.png" class="cour-icon" />
+                                <h3 class="text-primary">Bienvenio al OVI del curso Adminstraci&oacute;n de Redes </h3>
+                            </div>
+                            <p class="lead text-justify">
+                                En este Ovi encontrar&aacute;s muchos recursos que te permitir&aacute;n introducirte
+                                en las tematicas del curso. En los men&uacute;s de la parte superior entontrarás diferentes secciones con 
+                                contenidos sobre los temas que se abordaran en este curso. 
+                                <br/>
+                                <br/>
+                                Para iniciar con las lecturas usa el boton siguiente:
+                            </p>
+                            <div  style="text-align:center;">
+                                <p><a class="btn btn-lg btn-success" href="reading_1.html" role="button">Ir a las lecturas</a></p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="wpr-timeline-Tweet  effect6">
+                            <a class="twitter-timeline" data-height="450" href="https://twitter.com/UniversidadUNAD">Tweets by UniversidadUNAD</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-primary effect6">
+                            <div class="panel-heading"><h4 class="no-padding no-margin" >Objetivos del OVI</h4></div>
+                            <div class="panel-body">
+                                    <p class="text-primary text-justify">
+                                        El objetivo prinicipal de este OVI es introducir al estudiante en los conceptos fundamentales que se relacionan con
+                                        la admistracion de las redes con un enfoque en la seguridad. Por lo anterior los recursos contenidos se centran
+                                        especialmente en aspaectos realcionados con las protecci&oacute;n, la integridad y la seguridad de la informaci&oacute;n.
+                                    </p>  
+                            </div>
+                        </div>                     
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-success effect6">
+                            <div class="panel-heading"><h4 class="no-padding no-margin" >Objetivos del Curso</h4></div>
+                            <div class="panel-body">
+                                    <p class="text-primary text-justify">
+                                        EL curso de Administraci&oacute;n de Redes tiene por objetivo capacitar al estudiante sobre las redes informaticas
+                                        para complementar su formaci&oacute;n academica y de esta manera estar preparado integralmenete como profesional.<br/><br/><br/>
+                                    </p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel panel-info effect6">
+                            <div class="panel-heading"><h4 class="no-padding no-margin" >Tem&aacute;ticas</h4></div>
+                            <div class="panel-body">
+                                    <p class="text-primary text-justify">
+                                        Las tem&aacute;ticas del curso sobre el cual se construye este OVI, en general, abarcan:
+                                        Identificar amenazas de seguridad a las que se expone una red.<br/>
+                                       Por otro lado se exponen recursos par Garantizar integridad, disponibilidad y privacidad de datos y recursos.
 
-  </head>
-  <body>
-  <div style="text-align:center;">
-  <img src="logoUNAD.png" />
-    <h1>Curso - Diseño de Sitios Web -UNAD!</h1>
-  </div>
-  </body>
+                                    </p>  
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </div> <!-- /container -->
+        <footer class="footer">
+            <div class="container" id="ft-cont">
+            </div>
+        </footer>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#menu-container").load("menu.html");
+                $("#ft-cont").load("footer.html");
+                $("#mnhome").addClass("active");
+            });
+        </script>
+    </body>
 </html>

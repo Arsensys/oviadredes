@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Lectura 2</title>
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="menu-container"> </div>
+            <div class="page">
+                <div class="alert alert-info no-margin" role="alert">
+                    <strong>Descripci&oacute;n:</strong> Este documento habla sobre temas relacionados con "Heckers" 
+                    <a href="reading_2.html" class="btn btn-warning pull-right" aria-label="Left Align"> Lectura 3 
+                        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                    </a>
+                    <a href="reading_1.html" class="btn btn-warning pull-right" aria-label="Left Align"> 
+                        <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                        Lectura 1
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+
+                        <div id="pdfdocument"></div>
+                    </div>               
+                </div>       
+            </div>       
+        </div> <!-- /container -->
+        <footer class="footer">
+            <div class="container" id="ft-cont">
+            </div>
+        </footer>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/pdfobject.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#menu-container").load("menu.html");
+                $("#ft-cont").load("footer.html");
+                $("#mnread").addClass("active");
+                PDFObject.embed("docs/reading_2.pdf", "#pdfdocument");
+            });
+        </script>
+    </body>
+</html>
